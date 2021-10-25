@@ -1,3 +1,274 @@
-<html>hello
+<html>
+<head><title>document</title>
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="hero-bg">
+    <section class="top">
+        <header>
+            <a href="h">yummy.eats</a>
+        </header>
+        <h1> the healthy eating experiance</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci architecto maiores dolores itaque facere alias, laborum, quae esse minima, quidem vitae quod? Numquam totam eaque pariatur, ullam delectus quod deleniti!</p>>
+        <div class="form-container">
+            <div class="form-left">
+            
+         <form action="insert.php">
+                <label for="city">enter your city</label>
+               <input type="text" name="city" id="city">
+               <p>  EXAMPLE BUTARE</p>
+                  </div>
+               <input type="button" value="find food now">
+             </form>
+        </div>
+    </section>
+<section>
+
+</section>
+</div>
+<section class="authentic"> 
+    <div class="right-col">
+        <h2> BLAISE   . BOSSMAN</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius maxime natus id laboriosam at corrupti temporibus numquam totam, sunt, ut fuga quod amet. Voluptas sapiente quibusdam reprehenderit dolor a odit.</p>
+        </div>
+        <img src="3.spng" alt="">
+</section> <script></script>
+</body>
+</html><style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap');
+
+body{
+    font-family: 'montserrat', sans-serif;
+    margin: 0;
+
+}
+.hero-bg{
+    background-color: #307099 url('2.png');
+    background-position: 100% 83%;
+    color:white;
+    text-align: center;
+    padding-bottom: 4em;
+     background-image: url("2.png");
+   height: 400px;
+   width: 100%;
+}
+}
+header{
+    padding: 1em 0;
     
-</html>
+}
+.hero-bg a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+
+
+}
+section{
+    margin: 0 1em;
+
+}
+h1{
+    font-size: 2.5rem;
+    margin: 2em 0 1.2em;
+}
+h1 span{
+    text-transform: uppercase;
+    display: block;
+    font-size: 1.4em;
+    z-index: 1;
+
+}
+h1 span::before{
+    content: '';
+    position: absolute;
+    width: 3em;
+    background: #00bfff;
+    height: 4em;
+    bottom: 0;
+    z-index: -1;
+    margin-left: -.3em;
+
+}
+.hero-bg p{
+    font-weight: bold;
+    margin: 0 1em 3em;
+    
+}
+.form-container{
+    background-color: white;
+    margin: 2em --1em 0em;
+    padding: 2em;
+
+}
+label{
+    color: #2D7D98;
+    font-weight:bold;
+    display: block;
+    margin-bottom: 1em;
+    font-size: 1.2em;
+
+}
+input[type=text]{
+    border: 1px solid #707070;
+    padding: 1em;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: .5em;
+    margin-bottom: 1.2em;
+}
+.form-container p{
+    color: gray;
+    margin-bottom: 1.5em;
+    font-weight: normal;
+    font-size: .9em;
+    margin-top: .3em;
+    
+
+}
+input[type=button]{
+    background-color:#f89104 ;
+    border: none;
+    width: 80%;
+    color: white;
+    font-weight: bold;
+    padding: 1em 0;
+    font-size: 1.3em;
+    cursor: pointer;
+    
+}
+.authentic{
+    margin: 0;
+
+}
+.right-col{
+    text-align: center;
+    margin: 3em 1em;
+}
+h2{
+    text-transform:uppercase ;
+    position: relative;
+}
+h2::before{
+    content: '';
+    position: absolute;
+    width: 8em;
+    background: #00bfff;
+    height: 4em;
+    bottom: 0;
+    z-index: -1;
+    margin-left: -.3em;
+}
+img{
+   background-image: url("2.png");
+   width: 600px;
+   height:400px;
+   float:left;
+}
+}
+p{
+    line-height: 2em;
+}
+@media (min-width:730px){
+
+}
+section{
+    margin: 0 4em;
+}
+.form-container{
+    margin: 2em 4em 0em;
+
+}
+@media (min-width:930px){
+
+    .hero-bg{
+     text-align:left;
+        
+    }
+    .hero-bg p{
+        margin: 0 0 3em;
+    }
+    .hero-bg section{
+        width: 65%;
+    
+    }
+    .form-container{
+        margin: 2em 0 0;
+        padding: 2em;
+        border-radius: .5em;
+        box-shadow: 10px 10px 10px rgba(0,0,0,.3,);
+
+    }
+    form{
+        display: flex;
+
+    }
+    .form-left{
+      width: 70%;
+
+    }
+    label{
+        margin:0;
+
+    }
+input[type=button]{
+    height: fit-content;
+    font-size: 1.1em;
+    margin-left: 1em;
+    margin-top: 2.2em;
+    padding: .7em 0;
+    width: 30%;
+
+} 
+.hero-bg p{
+    margin-bottom: 0;
+
+}
+section.authentic{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    grid-template-areas:
+     "bowl content";
+}
+.right-col{
+    grid-area: content;
+ padding: 0 10%;
+ text-align: left;
+ align-self: center;
+}
+img{
+    grid-area: bowl;
+    background-image: url("7.png");
+   width: 600px;
+   height:400px;
+   float:right;
+
+    
+
+}
+h2{
+ margin: 0;
+
+}
+
+}
+.top{
+    animation: fadein 2s forwards;
+
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(-5em);
+       
+
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+
+    }
+}
+
+</style>
